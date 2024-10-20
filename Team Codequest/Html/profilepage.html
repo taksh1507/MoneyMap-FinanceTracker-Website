@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profilepage.css"> <!-- Link to external CSS -->
+    <script type="module" src="profilepage.js" defer></script> <!-- Link to external JavaScript -->
+</head>
+<body>
+    <h1>Welcome to the MoneyMap</h1>
+    <div class="flex-container"> <!-- Flex container for layout -->
+        <div class="profile-section"> <!-- Profile Info Section -->
+            <button id="toggleButton">Show/Hide Profile Info</button>
+            
+            <div id="profileInfo" style="display: none;"> <!-- Initially hidden -->
+                <div>First Name: <span id="loggedUserFName"></span></div>
+                <div>Last Name: <span id="loggedUserLName"></span></div>
+                <div>Email: <span id="loggedUserEmail"></span></div>
+                <button id="logout">Logout</button> <!-- Moved logout button inside profile info -->
+            </div>
+        </div>
+        <iframe src="financetracker.html"></iframe> <!-- Finance Tracker Page -->
+    </div>
+</body>
+</html>
